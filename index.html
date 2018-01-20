@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Julian Ferronato</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<script src="scroll.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/LOGOjf.png" type="image/x-icon">
+</head>
+<body>
+	<div id="lluvia"></div>
+	<main id="home">
+		<div class="cont">
+			<h1>Julian <span>&nbsp;&nbsp;</span> Ferronato</h1>
+			<h3>Portfolio</h3>
+		</div>
+		<img src="img/arrow-01.png" alt="flecha abajo" class="arrow">
+	</main>
+
+	<section class="about" id="about">
+	
+		<div class="backdiv">
+			<div class="desc">
+				<h3>i am a frontend developer </h3>
+				<br> <p class="subti">from Rosario, Argentina.</p>
+				<p class="text">21 year old boy who loves build interfaces and encode interactive productions.Constantly learning and experiencing new things. Founder of "Encoded", company dedicated to interactive experiences.</p>
+			</div>
+			<div class="contact">
+				<a href="mailto:julian.ferronato@hotmail.com" class="text bold"><p class="contactp">Contact: julian.ferronato@hotmail.com</p></a>
+				<div class="cont-img">
+					<a href="https://www.facebook.com/julian.ferronato">
+						<img src="img/fb-01.png" alt="Facebook" class="logocontct2">
+					</a>
+					<a href="https://www.instagram.com/ferronatojulian">
+						<img src="img/insta-01.png" alt="Instagram" class="logocontct2">
+					</a>
+					<a href="https://twitter.com/julianferronato">
+						<img src="img/twit-01.png" alt="Twitter" class="logocontct2">
+					</a>
+				</div>
+			</div>
+				
+		</div>
+
+		<img src="img/corner1-01.png" alt="borde decorativo" class="corner1">
+		<img src="img/corner2-01.png" alt="borde decorativo" class="corner2">
+		<img src="img/arrow-01.png" alt="flecha abajo" class="arrow dos">	
+	</section>
+
+		<section class="about work" id="work">
+			<img src="img/works-01.png" alt="Works" class="work-logo">
+			<div class="slider-fondo">
+				
+				<div class="asd">
+					<img src="img/proyect1.png" alt="encoded" id="p1">
+					<a href="https://julianferro.github.io/EncodedConference/" class="linka" id="link1" target="_blank">Visit site:</a>
+					<a href="https://julianferro.github.io/SiteColor-portfolio/" class="linka" id="link2" target="_blank">Visit site:</a>
+					<a href="https://julianferro.github.io/Clothing-brand/" class="linka" id="link3" target="_blank">Visit site:</a>
+					<img src="img/proyect2.png" alt="agency" id="p2">
+					<img src="img/proyect3.png" alt="brand" id="p3">
+					<button id="right"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+					<button id="left"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+				</div>
+				<div class="asd2">
+					<p id="descp1"> <span class="bold">Encoded conference </span> <br>
+						fake proyect. html5, css3, javascript <br>
+						CSS3 animations, Lazy loading, full responsive.</p>
+					<p id="descp2"> <span class="bold">Agency portfolio</span> <br>
+						fake proyect. html5, css3, javascript. 
+						Flexbox, fixed navbar, image parallax, full responsive.</p>
+					<p id="descp3"> <span class="bold">Clothing brand</span> <br>
+						fake proyect. html5, css3, Jquery. 
+						Flexbox, CSS Grid, Full page, full responsive</p>
+					<div class="contcirculos">
+						<div id="circulo1" class="circulo1"></div>
+						<div id="circulo2" class="circulo2"></div>
+						<div id="circulo3" class="circulo3"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="stars"></div>	
+	</section>
+	<span class="about footer">
+		<footer>
+			<h4><a class="link" id="homee">HOME</a></h4>
+			<h4><a class="link" id="aboutt">ABOUT</a></h4>
+			<h4><a class="link" id="workk">WORKS</a></h4>
+			 <img src="img/arrowleft-01.png" alt="arrowleft" class="left">
+			 <a href="mailto:julian.ferronato@hotmail.com" class="text2">Contact: julian.ferronato@hotmail.com</a>
+			 <div class="cont-logo">
+					<a href="https://www.facebook.com/julian.ferronato">
+						<img src="img/fb-01.png" alt="Facebook" class="logocontct"></a>
+					<a href="https://www.instagram.com/ferronatojulian">
+						<img src="img/insta-01.png" alt="Instagram" class="logocontct"></a>
+					<a href="https://twitter.com/julianferronato">
+						<img src="img/twit-01.png" alt="Twitter" class="logocontct"></a>
+				</div>
+		</footer>
+	</section>
+	
+
+
+<script>
+	const fondo = document.getElementById('lluvia')
+	fondo.style.background = 'url(img/lluvia.png)'
+		fondo.style.width = '100%'
+		fondo.style.height = '100%'
+		fondo.style.position = 'fixed'
+	let num = 0
+	function bajar(){
+		num = num - 5
+		fondo.style.backgroundPosition = '0px ' + num+'%'
+	}
+	var intervalo = setInterval('bajar()',300);
+
+	let current = 1
+	proyect1 = document.getElementById('p1')
+	proyect2 = document.getElementById('p2')
+	proyect3 = document.getElementById('p3')
+	descp1 = document.getElementById('descp1')
+	descp2 = document.getElementById('descp2')
+	descp3 = document.getElementById('descp3')
+	circ1 = document.getElementById("circulo1")
+	circ2 = document.getElementById("circulo2")
+	circ3 = document.getElementById("circulo3")
+	link1 = document.getElementById("link1")
+	link2 = document.getElementById("link2")
+	link3 = document.getElementById("link3")
+	document.getElementById("right").addEventListener("click", sumar);
+	document.getElementById("left").addEventListener("click", restar);
+	circ1.addEventListener("click", ir1);
+	circ2.addEventListener("click", ir2);
+	circ3.addEventListener("click", ir3);
+	check()
+
+	function ir1(){
+		current = 1
+		check()
+	}
+	function ir2(){
+		current = 2
+		check()
+	}
+	function ir3(){
+		current = 3
+		check()
+	}
+
+	function sumar(){
+		current += 1
+
+		if (current==4) {
+			current = 1
+		}
+		
+		check()
+
+		console.log(current)
+	}
+	function restar(){
+	current -= 1
+	
+		if (current==0) {
+			current = 3
+		}
+
+	check()
+
+	console.log(current)
+	}
+
+	function check(){
+		if (current == 1) {
+		p1.style.opacity = "1";
+		p2.style.opacity = "0";
+		link1.style.backgroundColor = "#91447a";
+		link1.style.opacity='1'
+		link2.style.opacity='0'
+		link3.style.opacity='0'
+		link1.style.visibility='visible'
+		link2.style.visibility='hidden'
+		link3.style.visibility='hidden'
+		p3.style.opacity = "0";
+		descp1.style.opacity = "1";
+		descp2.style.opacity = "0";
+		descp3.style.opacity = "0";
+		circ1.classList.add('active');
+		circ2.classList.remove("active");
+		circ3.classList.remove("active");
+		}
+		if (current == 2) {
+			p1.style.opacity = "0";
+			p2.style.opacity = "1";
+			p2.style.boxShadow = "20px 10px #111c1e";
+			link2.style.backgroundColor = "#111c1e";
+			link1.style.opacity='0'
+			link2.style.visibility='visible'
+			link1.style.visibility='hidden'
+			link3.style.visibility='hidden'
+			link2.style.opacity='1'
+			link3.style.opacity='0'
+			p3.style.opacity = "0";
+			descp1.style.opacity = "0";
+			descp2.style.opacity = "1";
+			descp3.style.opacity = "0";
+			circ2.classList.add("active");
+			circ1.classList.remove("active");
+			circ3.classList.remove("active");
+		}
+		if (current == 3) {
+			p1.style.opacity = "0";
+			p2.style.opacity = "0";
+			p3.style.opacity = "1";
+			p3.style.boxShadow = "20px 10px #2b8c8c";
+			link3.style.backgroundColor = "#2b8c8c";
+			descp1.style.opacity = "0";
+			descp2.style.opacity = "0";
+			descp3.style.opacity = "1";
+			link1.style.opacity = "0";
+			link2.style.opacity = "0";
+			link3.style.opacity = "1";
+			link3.style.visibility='visible'
+			link2.style.visibility='hidden'
+			link1.style.visibility='hidden'
+			circ3.classList.add("active");
+			circ2.classList.remove("active");
+			circ1.classList.remove("active");
+		}
+	}
+
+	document.querySelector('#homee').addEventListener('click', () => {
+  scrollIt(
+    document.querySelector('#home'),
+    400,
+    'linear',
+    () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+  );
+});
+		document.querySelector('#aboutt').addEventListener('click', () => {
+  scrollIt(
+    document.querySelector('#about'),
+    300,
+    'linear',
+    () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+  );
+});
+			document.querySelector('#workk').addEventListener('click', () => {
+  scrollIt(
+    document.querySelector('#work'),
+    300,
+    'linear',
+    () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+  );
+});
+
+</script>
+</body>
+
+</html>
